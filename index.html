@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alexis Hyde — Writing</title>
+<style>
+:root{--bg:#1f0907;--ink:#f4b3d8;--mute:#c79ab5;--line:#f4b3d8;--soft:#4a2a2e;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Helvetica Neue",Helvetica,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px;text-transform:uppercase;font-size:1.15rem}
+header span:last-child{font-size:.8rem;letter-spacing:.08em;color:var(--mute)}
+h1{font-size:min(31vw,236px);line-height:.85;font-weight:900;letter-spacing:-.055em;margin:36px 0 28px;text-transform:uppercase}
+.hero{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--soft)}
+.lede{margin:28px 0 36px;max-width:38em;font-size:1.05rem;line-height:1.5}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.4rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+nav button{background:none;border:1px solid var(--ink);color:var(--ink);padding:8px 14px;cursor:pointer;font:inherit}
+nav button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+article{border-top:1px solid var(--soft);padding:22px 0}
+article h2{font-size:1.3rem;line-height:1.2;letter-spacing:-.02em;font-weight:700;margin:0 0 .4rem}
+article h2 a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em}
+article h2 a:hover{opacity:.7}
+.meta{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--mute);margin:0 0 .45rem}
+article p{margin:0;color:var(--mute);font-size:1rem}
+.contact,.resume{border-top:1px solid var(--line);margin-top:24px;padding-top:28px}
+.rlink{margin:0;font-size:1.15rem}
+.rlink a{color:inherit;text-underline-offset:.18em}
+.contact h3,.resume h3{font-size:clamp(2rem,9vw,3.2rem);font-weight:900;letter-spacing:-.04em;text-transform:uppercase;line-height:.9;margin:0 0 22px}
+.contact ul{list-style:none;margin:0;padding:0}
+.contact li{display:flex;align-items:center;gap:12px;padding:10px 0;font-size:1.05rem}
+.contact svg{width:22px;height:22px;flex:none}
+.contact a{color:inherit;text-underline-offset:.18em}
+footer{border-top:1px solid var(--line);margin-top:24px;padding:20px 0 40px;font-size:.8rem;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+#views{margin-bottom:1.2rem}
+#views button{font-size:.95rem;padding:10px 24px}
+.grid{columns:2 220px;column-gap:12px}
+.grid img{width:100%;display:block;margin:0 0 12px;break-inside:avoid;cursor:zoom-in;background:var(--soft)}
+#lb{position:fixed;inset:0;background:rgba(10,3,2,.93);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50;cursor:zoom-out}
+#lb[hidden]{display:none}
+#lb img{max-width:100%;max-height:100%;object-fit:contain}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span>Alexis Hyde</span><span>Writing</span></div></header>
+<main class="wrap">
+<h1>Hyde</h1>
+<img class="hero" src="images/img-1.jpg" alt="Portrait of Alexis Hyde">
+<nav id="views"><button data-v="writing" aria-pressed="true">Writing</button><button data-v="art" aria-pressed="false">Art</button><button data-v="about" aria-pressed="false">About Me</button></nav>
+<div id="writing">
+<p class="lede">Greetings, my name’s Alexis. On this website you will find a range of my written work. Some are academic assignments, while others I wrote for fun. In the grand scheme of all projects, however, my mission is to advocate for a new philosophy—one that is better suited than traditional theories—on autonomy and protecting the rights of the person in the always-advancing age of artificial intelligence. Constantly do questions about institutional power, individual liberties, legal doctrines, and technological design cross my mind. I hope that by reading my work a similar sense of inspiration intuits within you.</p>
+<nav id="tabs"></nav>
+<section id="list"></section>
+</div>
+<section id="art" hidden><p class="lede">So you’ve found my art… I am a lot better at the art of authorship than design, but obviously dabble in the latter anyways. I think in images, remember in abstractions, and deal with a lot of ideas. Sometimes, I prefer drawing out personal events rather than writing them. Other times, as Aristotle once said, “the aim of art is to represent not the outward appearance of things, but their inward significance.” That is essentially what I attempt to do. My process is simple; I use watercolor pencils, so first draw with the pencil and then go back with a watercolor brush. I believe art, like writing, is a constant work in progress. So, many of these are still in the draft phase. In any case, I am no pro but in the words of Pablo Picasso, “art washes away from the soul the dust of everyday life.”</p><div class="grid" id="grid"></div></section>
+<section id="about" hidden><p class="lede">I am a writer primarily in political theory who focuses on assessing policy from various vantage points. My academic background is in political science, where I concentrated my studies in theory, as well as French and global film &amp; media studies. Writing on these subjects really blossomed into a passion of mine particularly from the three years I served as an Editor for my undergraduate political review journal. It was there that I explored creative conventions for addressing dense topics, realizing the great ways in which an author can tailor a unique storytelling experience for their audiences.</p><p class="lede">To my projects I also offer a strong background in legal and policy work, ranging from land-use laws research to risks posed by AI to the markets and national security interests. That is, I oscillate from writing on what’s actually happening in the real-world to predicting what might happen in the foreseeable future. At times, my writing may seem pessimistic about the fate of the world amid the trajectory of technology. My range of attitudes have certainly evolved much like a pinball shooting back and forth. I believe the best is possible, but take note of (ethical) negligence as I see it. Much of the finger I point at American firms derives inspiration from my French studies, where I learned about progressive institutional efforts to protect privacy such as with the GDPR. What I believe you will find makes me stand out as a writer is the personal voice I add to academic arguments, adding a layer to them as an active witness participating in the unraveling. Thank you for visiting my website!</p></section>
+<div id="lb" hidden><img alt=""></div>
+<section class='resume' id='resume'>
+<h3>Resume</h3>
+<p class='rlink'><a href='https://docs.google.com/document/d/1rQ4fI9Ex1RgUKxXG0UufyUK2MmE1hiq4xqIgQI1sRBA/edit?usp=sharing' target='_blank' rel='noopener'>View my resume →</a></p>
+</section>
+<section class="contact" id="contact">
+<h3>Contact</h3>
+<ul>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:hydealexis@proton.me">hydealexis@proton.me</a></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14M5 8h14"/><path d="M5 12h14v8l-7-4-7 4z"/></svg><a href="https://substack.com/@alexishyde" target="_blank" rel="noopener">substack.com/@alexishyde</a></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v6M8 7.5v.01M12 16v-6M12 12.5c0-1.5 1-2.5 2.3-2.5S16 11 16 12.5V16"/></svg><a href="https://www.linkedin.com/in/alexishyde/" target="_blank" rel="noopener">linkedin.com/in/alexishyde</a></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg><a href="https://www.instagram.com/alexishyde12/" target="_blank" rel="noopener">instagram.com/alexishyde12</a></li>
+</ul>
+</section>
+<footer>© Alexis Hyde</footer>
+</main>
+<script>
+var P=[
+["Law","May 2026","What’s right?","Argues that autonomy should be a protectable property interest, reading Moore v. Regents and Nader v. General Motors and tracing a contract-law route through terms of service."],
+["Law","Apr 2026","Social media addiction – subject to taking?","Argues that personal data should count as property protected by the Fifth Amendment’s Takings Clause, using Lindell v. United States and Meta’s addictive design as the case study."],
+["Law","Apr 2026","Free speech","A personal essay on why unfiltered writing online is worth defending, drawing on the First Amendment, John Stuart Mill’s On Liberty, and scripture."],
+["Criminal Law","2026","Arresting Addiction","Asks whether addiction is blameworthy, testing criminal punishment against harm, dangerousness, state of mind, and justification through Robinson v. California and Powell v. Texas."],
+["Criminal Law","","Under the Influence","Asks why society stigmatizes crack and opioids differently from cocaine and Adderall, and argues that film, government, pharma, and the courts reinforce a class divide in how drug use is judged."],
+["Law & Technology","2024","AI’s Synergy on the Global Economy and National Security","A two-part risk case study. It asks whether federal use of AI weakens domestic security, and whether AI in the global economy serves profit or human well-being, then recommends transparency and augmentation over automation."],
+["Law & Technology","","What Is Right in the Age of AI?","A persuasive presentation built on thesis, antithesis, and synthesis, arguing that the current trajectory of AI in the U.S. undermines established ideas of what is right, and closing with a call to prioritize humanity over artificiality."],
+["Law & Technology","2025","[Speculative] Amicus Curiae Brief on the Department of Justice’s Abuse of Federal Power","A mock amicus brief arguing that the DOJ’s use of Cloudflare Turnstile to route civil rights complaints is an unaccountable “rights-impacting” algorithm, tested through a month-long audit of its reporting form."],
+["Law & Technology","May 2025","A Right to Autonomy: A Senior Capstone Project","Defines autonomy through three conditions (plan, means, independence), argues that federal use of AI undermines it, and proposes protecting personal data as property under the Fifth Amendment’s Takings Clause."],
+["Law & Technology","Mar 2025","Pre-Law, Pre-Programmed: Algorithms as Discourse in Legal Education","Argues that the LSAC, law school admissions, and the justice system teach future lawyers to treat algorithms as a tool of discipline, and proposes letting test-takers explain their LSAT reasoning."],
+["Law & Technology","2024","The LSAT v. Hegelian Freedom","Asks whether the LSAT acts as a gatekeeper that keeps Hegelian freedom from evolving in modern America."],
+["Law & Technology","Feb 2024","A Concept of Privacy: Seeking Autonomy","Uses Habermas and Lessig to examine how government and Big Tech shape the digital public sphere, and what that means for private autonomy."],
+["Law & Technology","","The Digital Age: A Paradoxical Crisis","A personal essay that reads Big Tech, lobbying, and AI surveillance through Defoe’s plague town and Foucault’s Panopticon, and ends by asking whether the author is being watched."],
+["Law & Technology","May 2024","A Legitimacy Problem in the Politics of Privacy","Tests whether government and private companies can legitimately govern online privacy, using three conditions of political legitimacy (consent, natural consent, and coercion) and Foucault’s Panopticon."],
+["Law & Technology","May 2024","A Reconsideration on The Art of Law","A definition argument asking whether law itself can be understood as a work of art."],
+["Political Thought","Oct 2021","Why Is White Collar Crime So Pervasive in the U.S. Healthcare Industry?","Traces how the Sackler family and Purdue Pharma avoided consequences, and argues that ties to the FDA and political lobbying explain it."],
+["Political Thought","Apr 2023","Limiting Congressmembers’ Personal “Power of the Purse”","Opens with the gap between congressional wealth and the median American household, then makes the case for limits."],
+["Political Thought","","An Argument on Unattainable Ethics","Defends Machiavelli against Castiglione: no courtier can be ethical while serving an autocrat."],
+["Political Thought","","Fallacies in Marx’s Critique of Capitalism","Argues that Marx’s humanism rests on a hasty generalization, so his critique of capitalism is unsound."],
+["Political Thought","","Manufactured Majorities","Argues that Tocqueville’s and Mill’s fear of majority tyranny is realized in social media and cancel culture."],
+["Political Thought","","La France : la Patrie ou le Laboratoire des Droits de l’Homme ?","An essay in French asking whether France is the homeland of human rights or their laboratory, tracing reforms since 1789 and conflicts such as Algeria and post-2015 surveillance laws."],
+["Political Thought","","A Catholic Catalyst in the Cold War","Argues that the Catholic Church played an indirect but real role in the fall of communism, weighing top-down Soviet reform against the Church’s grassroots influence in Poland and its ties to the United States."],
+["Political Thought","","The Politically Charged Weapon","Compares the atomic bomb to Star Wars’ Death Star, using Aristotle, the Federalist and Anti-Federalist papers, and the Manhattan Project to ask what a nuclear arsenal does to a republic."],
+["Political Thought","May 2024","A Man of the Times: Ethos in Franklin D. Roosevelt’s First Fireside Chat","A rhetorical analysis of how FDR built trust during the 1933 banking crisis."],
+["Film & Media","","Cosmos and Comedy in Space Race-era Soviet Cinema","A research presentation asking why Soviet science fiction like Solaris and Pilot Pirx’s Inquest failed to win audiences while Gaidai’s comedies topped the box office, arguing that the comedies used color for escapist spectacle and the sci-fi echoed state visual rhetoric."],
+["Film & Media","May 2025","The Sound and Look of War in a Galaxy Far, Far Away","A research paper on worldbuilding in the 2008 Clone Wars feature film."],
+["Film & Media","","Cinema du Look (Style), 1980–1986","Studies the color design and youth aesthetics of Diva and Betty Blue, and why France backed a glossy national image."],
+["Film & Media","","A Colorful Trip Through a Conscious Cinema","A personal essay on the politics of representation, sparked by watching Macunaíma."],
+["Film & Media","","The Trial: Studio Pitch Deck","A seven-slide pitch to a studio executive for an Apple TV+ anthology series inspired by Kafka and Severance, extended through an Apple News feed and a companion mobile app."],
+["Film & Media","","The Trial: A Transmedia Franchise Proposal","A project portfolio proposing how to turn Kafka’s The Trial into a practical, profitable franchise."],
+["Film & Media","Apr 2024","L’anthropocène dans l’art","An essay in French reading four paintings (Monet, Zhitkov, Dalí, Kay Sage) to test the claim that Impressionism and Surrealism mark humanity’s entry into the Anthropocene."],
+["Film & Media","Dec 2023","As Above, So Below: A Paris & New York Photography Exhibit","An exhibition statement on self-definition through the cities of Paris and New York."]
+];
+var O=["Philosophical","Political","Law","Film","French","Presentations"];
+var K={Presentations:["Synergy","What Is Right","Studio Pitch","Cosmos and Comedy"],Philosophical:["Unattainable","Fallacies","Manufactured","LSAT","Concept of Privacy","Reconsideration","Digital Age","Pre-Law","Right to Autonomy"],Film:["Sound and Look","Cinema du Look","Colorful Trip","Transmedia Franchise","As Above"],French:["La France","anthropoc"],Law:["What’s right","Social media addiction","Free speech","Speculative"]};
+P.forEach(function(p){p[0]="Political";for(var k in K){if(K[k].some(function(s){return p[2].indexOf(s)>-1}))p[0]=k}});
+P.sort(function(a,b){return O.indexOf(a[0])-O.indexOf(b[0])});
+var cats=["All"].concat(O);
+var D="https://docs.google.com/document/d/",S="https://docs.google.com/presentation/d/",F="https://drive.google.com/file/d/",J="https://media.journoportfolio.com/users/";
+var U=[
+["What’s right","https://alexishyde.substack.com/p/two-torts-one-right"],
+["Social media addiction","https://alexishyde.substack.com/p/social-media-addiction-subject-to"],
+["Free speech","https://alexishyde.substack.com/p/free-speech"],
+["White Collar",D+"1twfoBOON60ECk8ykmwytidlQ9jabpHrdqku5PK1HYy8/edit"],
+["Pre-Law",D+"1no0iW1yJweUePQTfBnijqgRyWEASrKXvRF2gG1aavcE/edit"],
+["Unattainable",D+"1bgDDwPDE4AgmwfU1dkauDK_hno49PVyCEKVshS-5vig/edit"],
+["Reconsideration",D+"1ZeN2KgiNPiEXkqEDyRRMwwzRbhH3bv7211vrsahMX4o/edit"],
+["Limiting",D+"1MKJnIRb5rX2sxgKd6THWAx6itxQF8-MKfd4v3cQW4DY/edit"],
+["Fallacies",D+"1BAhfde6OJFEw12-56HZCmrADjHVBX8RHRAGjEeLQomA/edit"],
+["LSAT",D+"16ihnqR5-j0Hn1Hvcf_r8pCPw8sUAkIVbpWble7Lp8b0/edit"],
+["Manufactured",D+"123MwL7GIrJ_oJjMnfznFLFWC3Qc6jjGS04uqVgc9WVg/edit"],
+["Concept of Privacy",D+"1stOTXdZ49gWHMkBd66mCUZcMsXMiA9ozM9z0eMg9kCI/edit"],
+["Man of the Times",D+"1LlyAY8lTDG4C1lt-Gzgz7CZrfG9Rx7wtXwoHrRGjBZI/edit"],
+["As Above",D+"1Aqq_lAMuUnyX5cO8gPzs7WBrH4nU9Occcl0sxNzeQyk/edit"],
+["Digital Age",D+"1kBh0c3GJ02Jxc90zIOBjKhiVcZey2fvoJh9L_sQl0dc/edit"],
+["Politically Charged",D+"1PTUDv40XY02e_jWz33_NyartAn4c1k6fRua_MyXBCFs/edit"],
+["La France",D+"1IoSjRGg7ld8tVmg-NHLwnpwODOLgl-txB_aDHChdgQ0/edit"],
+["anthropoc",D+"1DiOuxjouBw0oISErxwVzoHnq3M6nyvLq80PKUbfRH0c/edit"],
+["Sound and Look",F+"1Z0wqDC-__QhjGP6mumhC9bAeFY5OyeLq/view"],
+["Cinema du Look",F+"1L3TkmSn7yDUK-Bj8EdwUu13gZ56ZGnvq/view"],
+["Colorful Trip",F+"1otHFKnVzP1ZGwGYMiWghqb-OguuR9RHq/view"],
+["Transmedia Franchise",F+"1wgsZEI1EYzxN-noPJH4BaVN1zDGRzTBT/view"],
+["Synergy",F+"1MJ3WU_i5t0IhDH0SF6qTvDiyOeP08gjL/view"],
+["What Is Right",S+"1Jmis53OOZ2xCF_oQ-pt1NuplVfiHV6p5dFEdOo2CpPw/edit"],
+["Studio Pitch",S+"1xnZJSGmprxXA9AzXrUowiRn6323gBXSFLFsY5dx3soM/edit"],
+["Cosmos and Comedy",S+"1_e-7JvOt9F1HdwHTLub1hx0P2zMetGDLSr7787KunC4/edit"],
+["Right to Autonomy",J+"508246/uploads/0698a4a2-aeb2-4fc5-8f1c-8888201ba260.pdf"],
+["Legitimacy Problem",J+"496926/uploads/cab1d580-7a2f-4250-99a4-e99e3ba15fab.pdf"],
+["Arresting Addiction",J+"496926/uploads/a06f4dd8-e6b9-46cf-8886-fdaffcfb614f.pdf"],
+["Under the Influence",J+"496926/uploads/11b04cb6-bae4-4cbb-8faa-f0056c87fb84.pdf"],
+["Catholic Catalyst",J+"496926/uploads/2ec83424-ba5a-49c0-becd-988f2fa56e95.pdf"],
+["Speculative",J+"496926/uploads/66649095-6c86-47b1-ab06-f800e4cbd611.pdf"]
+];
+function lk(t){for(var i=0;i<U.length;i++){if(t.indexOf(U[i][0])>-1)return "<a href='"+U[i][1]+"' target='_blank' rel='noopener'>"+t+"</a>"}return t}
+var cur="All",tabs=document.getElementById("tabs"),list=document.getElementById("list");
+function draw(){
+ tabs.innerHTML="";
+ cats.forEach(function(c){var b=document.createElement("button");b.textContent=c;b.setAttribute("aria-pressed",c===cur);b.onclick=function(){cur=c;draw()};tabs.appendChild(b)});
+ list.innerHTML=P.filter(function(p){return cur==="All"||p[0]===cur}).map(function(p){
+  return "<article><div class='meta'>"+p[0]+(p[1]?" · "+p[1]:"")+"</div><h2>"+lk(p[2])+"</h2><p>"+p[3]+"</p></article>"}).join("");
+}
+draw();
+var ART=["images/img-2.jpg", "images/img-3.jpg", "images/img-4.jpg", "images/img-5.jpg", "images/img-6.jpg", "images/img-7.jpg", "images/img-8.jpg", "images/img-9.jpg", "images/img-10.jpg", "images/img-11.jpg", "images/img-12.jpg", "images/img-13.jpg", "images/img-14.jpg", "images/img-15.jpg", "images/img-16.jpg", "images/img-17.jpg", "images/img-18.jpg", "images/img-19.jpg", "images/img-20.jpg", "images/img-21.jpg"];
+(function(){
+var vb=document.querySelectorAll('#views button'),wr=document.getElementById('writing'),ar=document.getElementById('art'),ab=document.getElementById('about'),gr=document.getElementById('grid'),lb=document.getElementById('lb'),lbi=lb.firstElementChild,built=false;
+function build(){if(built)return;built=true;ART.forEach(function(u,i){var im=new Image();im.src=u;im.alt='Colored pencil drawing '+(i+1)+' of '+ART.length;im.onclick=function(){lbi.src=u;lbi.alt=im.alt;lb.hidden=false};gr.appendChild(im)})}
+function show(v){var a=v==='art';wr.hidden=v!=='writing';ar.hidden=!a;ab.hidden=v!=='about';if(a)build();vb.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===v)})}
+vb.forEach(function(b){b.onclick=function(){location.hash=b.dataset.v}});
+function sync(){var h=location.hash.slice(1);show(h==='art'||h==='about'?h:'writing')}
+window.addEventListener('hashchange',sync);lb.onclick=function(){lb.hidden=true};sync();
+})();
+</script>
+</body>
+</html>
